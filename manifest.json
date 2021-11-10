@@ -1,0 +1,22 @@
+{
+  "name": "id attribute autolinker",
+  "description": "Insert permalink automatically along h2, h3, h4 elements with ID attribute.",
+  "manifest_version": 2,
+  "version": "0.1",
+  "author": "windymelt",
+  "homepage_url": "https://github.com/windymelt/heading-with-id-to-link-extension",
+  "browser_action": {
+    "default_icon": "icon_32.png"
+  },
+  "icons": {
+    "16": "icon_16.png",
+    "48": "icon_48.png",
+    "128": "icon_128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["http://*/*", "https://*/*"],
+      "js": ["content_scripts.js"]
+    }
+  ]
+}
